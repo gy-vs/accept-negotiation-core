@@ -1,0 +1,26 @@
+{
+  "name": "accept-negotiation-core",
+  "version": "0.1.0",
+  "description": "Pure HTTP content negotiation library (Accept, Accept-Language, Accept-Encoding, Accept-Charset) with explainable results",
+  "type": "module",
+  "main": "./build/src/index.js",
+  "types": "./build/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/src/index.d.ts",
+      "default": "./build/src/index.js"
+    }
+  },
+  "files": [
+    "build/src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test build/test/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.5.0"
+  }
+}
